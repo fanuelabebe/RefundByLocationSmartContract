@@ -27,7 +27,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
+android {
+    buildFeatures {
+        buildConfig = true
+        viewBinding true
+    }
+}
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
