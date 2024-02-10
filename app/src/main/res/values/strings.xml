@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">LocationSmartContract</string>
+    <string name="ok">OK</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="check">Check</string>
+    <string name="app_bar_title_add_delivery">New Delivery</string>
+    <string name="app_bar_sub_title_add_delivery">Create new delivery session</string>
+    <string name="are_you_sure">Are you sure you want to: </string>
+    <string name="print_button_save">Save</string>
+    <string name="name">NAME</string>
+    <string name="address">ADDRESS</string>
+    <string name="ip">IP</string>
+    <string name="location">LOCATION</string>
+    <string name="distance">DISTANCE</string>
+    <string name="initial">INITIAL</string>
+    <string name="incentive">INCENTIVE</string>
+    <string name="end_time_stamp">END TIME STAMP</string>
+    <string name="input_contract_parameters">Input Contract Parameters</string>
+    <string name="input_connection_parameters">Input Connection Parameters</string>
+    <string name="select_an_address">Select An Address</string>
+
+
 </resources>

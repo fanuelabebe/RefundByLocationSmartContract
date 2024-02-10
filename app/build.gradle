@@ -17,14 +17,22 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField 'String', "MapApiKey", MAP_API_KEY
+            resValue "string", "MapApiKey", MAP_API_KEY
+            buildConfigField "boolean", "isTesting", "true"
+            buildConfigField "boolean", "isRelease", "false"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "isTesting", "false"
+            buildConfigField "boolean", "isRelease", "true"
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 android {
@@ -42,6 +50,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'org.web3j:infura:3.3.1-android'
-    implementation 'org.web3j:core:3.1.1-android'
-    implementation 'org.web3j:core:4.5.6'
+    implementation 'org.web3j:core:4.10.3'
+    implementation 'com.google.android.gms:play-services:12.0.1'
 }
